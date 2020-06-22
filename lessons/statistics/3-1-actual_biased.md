@@ -11,11 +11,11 @@ import first
 import thinkstats2
 import thinkplot
 
-def BiasPmf(pmf, label):
+def BiasPmf(pmf, label):\
     new_pmf = pmf.Copy(label=label)\
 
     for x, p in pmf.Items():\
-        new_pmf.Mult(x, x)\
+        new_pmf.Mult(x, x)
         
-    new_pmf.Normalize()\
+    new_pmf.Normalize()
     return new_pmf\
