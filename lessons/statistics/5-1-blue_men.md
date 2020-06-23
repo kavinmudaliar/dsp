@@ -6,12 +6,12 @@ from __future__ import print_function, division
 
 import numpy as np
 
-import nsfg
-import first
+import nsfg\
+import first\
 import analytic
 
-import thinkstats2
-import thinkplot
+import thinkstats2\
+import thinkplot\
 import scipy.stats
 
 avg = 178 #average height [cm]\
