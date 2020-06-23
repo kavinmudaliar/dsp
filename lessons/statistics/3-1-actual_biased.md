@@ -19,3 +19,14 @@ def BiasPmf(pmf, label):\
         
     new_pmf.Normalize()\
     return new_pmf
+
+resp = nsfg.ReadFemResp() #resp is a pandas dataframe
+resp.head()
+
+PMF = thinkstats2.Pmf(resp.numkdhh, label='numkdhh') #unbiased
+
+biased = BiasPmf(PMF, label='biased')
+
+thinkplot.Pmfs([PMF, biased])
+thinkplot.Config(xlabel='# of children', ylabel='PMF')
+
