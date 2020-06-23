@@ -14,8 +14,8 @@ import thinkstats2
 import thinkplot
 import scipy.stats
 
-avg = 178 #average height [cm]
-std_dev = 7.7 #standard deviation [cm]
+avg = 178 #average height [cm]\
+std_dev = 7.7 #standard deviation [cm]\
 dist = scipy.stats.norm(loc=avg, scale=std_dev)
 
 lower_bound = 177.8 # 5'10 lower height in cm\
